@@ -11,4 +11,4 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["node","index.js"]
+CMD ["node","app/index.js"]

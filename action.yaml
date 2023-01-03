@@ -1,0 +1,8 @@
+name: 'Locale Text Validator'
+description: 'this github action can scan the yaml files and validate them to figure out same text being used across multiple keys'
+outputs:
+  duplicate_text_map:
+    description: 'text as key of map & each value contain multiple keys that are using that text'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
